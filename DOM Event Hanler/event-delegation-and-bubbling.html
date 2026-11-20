@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Delegate</title>
+</head>
+<body>
+    <h1>Explore the Event Delegate concept</h1>
+    <ol id="item-list">
+        <li class="item">My Awesome list items - 1</li>
+        <li class="item">My Awesome list items - 2</li>
+        <li class="item">My Awesome list items - 3</li>
+        <li class="item">My Awesome list items - 4</li>
+        <li class="item">My Awesome list items - 5</li>
+        <li class="item">My Awesome list items - 6</li>
+    </ol>
+
+    <button id="btn-click">Add New list</button>
+
+
+    
+    <script>
+
+        // Event mane hocce onekgulo details and Event.target mane hocce shudu specific details hobe. 
+
+    //    const items = document.getElementsByClassName('item');
+    //    for(const item of items){
+    //     item.addEventListener('click',function(event){
+    //         event.target.parentNode.removeChild(event.target);
+    //     })
+    //    }
+
+    //  ----------------------------------------------------------------------------------------------
+
+    //    document.getElementById('btn-click').addEventListener('click',function(){  //btn connection 
+
+    //     const ol = document.getElementById('item-list');  //parent to be added 
+
+    //     const li = document.createElement('li');  // create ol 
+    //     li.innerText = 'Brand new Items added';
+
+    document.getElementById('item-list').addEventListener('click',function(event){
+        event.target.parentNode.removeChild(event.target);
+    })
+
+
+
+
+    const items = document.getElementsByClassName('item');
+       for(const item of items){
+        item.addEventListener('click',function(event){
+            event.target.parentNode.removeChild(event.target);
+        })
+       }
+
+       document.getElementById('btn-click').addEventListener('click',function(){  //btn connection 
+
+        const ol = document.getElementById('item-list');  //parent to be added 
+
+        const li = document.createElement('li');  // create ol 
+        li.classList.add('item');
+        li.innerText = 'Brand new Items added';
+
+
+        //Now add 
+        ol.appendChild(li);
+
+
+        
+       })
+
+       
+    </script>
+</body>
+</html>

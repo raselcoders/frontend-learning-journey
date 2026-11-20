@@ -1,0 +1,39 @@
+.container {
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    font-size: 32px;
+    text-align: center;
+    padding: 50px;
+    border:1px solid blueviolet;
+    border-radius: 50px;
+}
+.box:hover{
+    z-index: 1;        
+    background-color:blueviolet
+}
+
+.box1 {
+    background: skyblue;
+    position: relative;
+    left:50px;
+    top:50px;
+
+
+}
+
+.box2 {
+    background: lightgreen;
+    position:relative;
+    left:100px;
+    top:-120px;
+}
+
+.box3 {
+    background: pink;
+    position: relative;
+    left:150px;
+    top:-250px;
+}

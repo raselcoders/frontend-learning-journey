@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Events</title>
+</head>
+
+<body>
+
+    <!-- Option 1 Event Handler -->
+    <h2>Dom Doma Dom Dom 2</h2>
+    <button onclick="console.log(5)">Clikc Here</button>
+    <button onclick="console.log(20)">Another Option</button>
+    <button onclick="console.log('Hello DOM')">Third Button</button>
+    <input type="text">
+
+    <!-- Option 2 Event Handler -->
+    <button onclick="MakeYellow()">Yellow</button>
+    <button onclick="darkmode()">Dark Mode</button>
+    
+
+
+    <!-- option 03 -->
+
+    <button id="Make-Blue">Make Blue</button>
+
+
+    <!-- option 04   (( More Usefull )) -->
+    <button id="btn-make-green">Make Green</button>
+
+    <button id="red-button">Red Button</button>
+
+    <script>
+        document.getElementById('btn-make-green').addEventListener('click', function makegreen() {
+            document.body.style.backgroundColor = 'green';
+        })
+    </script>
+
+    <button id="purple-btn">Purple</button>
+    <script>
+        document.getElementById('purple-btn').addEventListener
+            ('click', function () {
+                document.body.style.backgroundColor = 'purple';
+            })
+    </script>
+
+    <script>
+        document.getElementById('red-button').addEventListener('click',function(){
+            document.body.style.backgroundColor='red';
+        })
+
+    </script>
+
+
+
+    <script src="Dom.js"></script>
+
+</body>
+
+</html>

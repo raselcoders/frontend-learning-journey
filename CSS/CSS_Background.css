@@ -1,0 +1,27 @@
+#ui009{
+    text-align: center;
+    color:white;
+    margin:20px;
+    border:20px solid blueviolet ;
+    background-color: black;
+    padding:30px;
+    height:auto;
+    width:500px;
+    box-shadow: 0 0 20px blueviolet;
+
+}
+.Rr99{
+    color:blueviolet;
+    text-align: left;
+    font-weight: 600;
+    font-size:larger;
+}
+
+#rh001{
+    background-image:url('Food\ and\ Drink.avif');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    
+}

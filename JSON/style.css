@@ -1,0 +1,76 @@
+.container-box{
+    text-align: center;
+    margin-top: 40px;
+}
+
+button{
+    background: linear-gradient(135deg,#4facfe,#00f2fe);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-right: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Hover effect */
+button:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Click effect */
+button:active{
+    transform: scale(0.95);
+}
+
+
+body{
+    font-family: Arial;
+    background:#f4f6f9;
+}
+
+#post-container{
+    max-width: 1160px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+}
+
+.postCard{
+    background:#fff;
+    border-radius:12px;
+    padding:20px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    transition:.3s;
+}
+
+.postCard:hover{
+    transform: translateY(-5px);
+}
+
+.postCard h2{
+    margin-bottom:10px;
+}
+
+.postCard p{
+    text-align:justify;
+    line-height:1.6;
+}
+
+/* Responsive */
+@media (max-width: 900px){
+    #post-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 600px){
+    #post-container{
+        grid-template-columns: 1fr;
+    }
+}

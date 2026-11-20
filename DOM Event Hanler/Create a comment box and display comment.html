@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Comment Box</title>
+    <style>
+        body {
+            background-color: #f0f2f5;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 40px;
+        }
+
+        #Header-h1 {
+            text-align: center;
+            color: #1c1e21;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            text-align: center;
+            color: #65676b;
+            font-weight: 500;
+            margin-bottom: 40px;
+        }
+
+        .div-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            justify-content: center;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .container {
+            background: #ffffff;
+            border: 1px solid #dddfe2;
+            border-radius: 15px;
+            width: 45%;
+            min-height: 180px;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #4b4f56;
+            font-size: 17px;
+            line-height: 1.5;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            border-color: #0084ff;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="Header-h1">Please Share Your Comment With Us.</h1>
+    <h3>All Comments Here.</h3>
+
+    <section>
+        <div class="div-container">
+            <div class="container">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem nulla reiciendis quasi recusandae maxime porro, quibusdam assumenda laboriosam magnam.
+            </div>
+
+            <div class="container">
+                Quaerat ratione aspernatur, ipsa asperiores ducimus vero vel quia laboriosam dolor voluptates aliquam voluptatibus rem placeat debitis quidem.
+            </div>
+
+            <div class="container">
+                Delectus reprehenderit est labore, ipsum dolorum excepturi suscipit provident modi nulla dolor unde possimus iusto reiciendis voluptatem natus.
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <!-- <form action=""> -->
+            <textarea name="" id="textarea-conecting" cols="80" rows="10"></textarea>
+         <br>
+         <button id="btn-conecting">Post </button>
+        <!-- </form> -->
+         
+    </section>
+
+    
+        <script>
+            document.getElementById('btn-conecting').addEventListener('click',function(){
+
+                // console.log('Post Button Click');
+
+                const text_box_con = document.getElementById('textarea-conecting');
+                const values = text_box_con.value;
+                // console.log(values);
+
+                const divContainer = document.getElementById('div-container')
+                // console.log(divContainer);
+
+                const commentElement = document.createElement('p');
+                commentElement.classList.add(div-container); 
+                commentElement.innerText = values;
+
+                divContainer.appendChild(commentElement);
+
+
+            })
+        </script>
+</body>
+</html>

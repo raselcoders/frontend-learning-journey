@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Hanler</title>
+</head>
+<body>
+    <h1 id="page-title">I am Girgity <br>I can change my color <br> If you change my color , Please click this button  below</h1>
+    <button id="change-girgity-color">Change color</button>
+
+    <h1 id="user-page">No User</h1>
+    <button id="login-page">login</button>
+    <br>
+    <br>
+    <br>
+
+
+    <!-- handel input Text -->
+     <p id="set-name">No Name</p>
+     <input id="input-update" placeholder="Enter Your Name: " type="text">
+     <button id="btn-update">update</button>
+
+     <script>
+        // set Eventlistener 
+
+        document.getElementById('btn-update').addEventListener('click',function(){
+            // console.log("yes it's working")
+
+            const updateName = document.getElementById('input-update');
+            const name =updateName.value;
+            // console.log('Name: ',name)
+
+            const Name = document.getElementById('set-name');
+            Name.innerText = name;
+
+        })
+
+        
+     </script>
+
+    <script src="Event.js"></script>
+</body>
+</html>

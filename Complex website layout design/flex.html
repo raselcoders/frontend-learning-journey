@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flex</title>
+    <style>
+        .container{
+            display:flex;
+            gap:30px;
+        }
+        .box{
+            background-color: teal;
+            border-radius: 10px;
+            padding:20px;
+            border:1px solid rgba(106, 14, 218, 0.337);
+            color:white;
+        }
+        .container{
+            flex-direction: column;
+            /* width:400px; */
+            
+        }
+        .items{
+            background-color: orange;
+            width:100px;
+            text-align: center;
+            border:5px solid tomato;
+            border-radius: 10px;
+        }
+        .box-container{
+            display:flex;
+            flex-wrap:wrap;
+            gap:20px;
+
+        }
+
+
+
+
+
+
+         @media screen and (max-width:576px) {
+        body{
+            background-color: aqua;
+        }
+        .items{
+            width:100%;
+        }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Let's Exploring Responsive flex</h1>
+    <div class="container">
+        <div class="box">
+            <h3>box-1</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis ipsum illo eligendi, assumenda nesciunt officiis corporis ullam, vel dolore, ad laborum veritatis rerum sapiente nihil reiciendis est eveniet voluptatibus. Saepe cumque consequatur, quia totam tenetur qui aut laborum, error alias hic ipsum veniam! Ex aperiam non eos in, exercitationem totam adipisci, doloribus consequatur doloremque, harum ullam facere nisi eius minima!</p>
+        </div>
+        <div class="box">
+            <h3>box-1</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis ipsum illo eligendi, assumenda nesciunt officiis corporis ullam, vel dolore, ad laborum veritatis rerum sapiente nihil reiciendis est eveniet voluptatibus. Saepe cumque consequatur, quia totam tenetur qui aut laborum, error alias hic ipsum veniam! Ex aperiam non eos in, exercitationem totam adipisci, doloribus consequatur doloremque, harum ullam facere nisi eius minima!</p>
+        </div>
+
+       <div class="box-container">
+        <div class="items">box-1</div>
+        <div class="items">box-2</div>
+        <div class="items">box-3</div>
+        <div class="items">box-4</div>
+        <div class="items">box-5</div>
+        <div class="items">box-6</div>
+        <div class="items">box-7</div>
+        <div class="items">box-8</div>
+        <div class="items">box-9</div>
+        <div class="items">box-10</div>
+        <div class="items">box-11</div>
+        <div class="items">box-12</div>
+        <div class="items">box-13</div>
+        <div class="items">box-14</div>
+        <div class="items">box-15</div>
+        <div class="items">box-16</div>
+        <div class="items">box-17</div>
+        <div class="items">box-18</div>
+        <div class="items">box-19</div>
+        <div class="items">box-20</div>
+
+       </div>
+         
+</body>
+</html>

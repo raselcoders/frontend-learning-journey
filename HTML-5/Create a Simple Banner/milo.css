@@ -1,0 +1,67 @@
+.milo_container{
+    display:flex;
+    gap:50px;
+    background-color: rgb(197, 210, 233);
+    font-size:1.25em;
+    padding:50px;
+}
+.milo_container img{
+    width:500px;
+    height:350px;
+    margin:auto;
+    border:5px solid black;
+    border-radius: 100px;
+
+    
+
+}
+.milo_container h1{
+    color:rgb(36, 13, 240);
+    text-align: center;
+
+}
+.milo_container p{
+    color:rgb(31, 18, 214);
+    font-size: 1.25em;
+    border:5px solid rgb(24, 24, 221);
+    border-radius:30px;
+    padding:50px;
+    background-color: rgb(220, 192, 155);
+}
+body{
+    max-width: 1500px;
+    margin: 0 auto;
+    padding:50px;
+    
+}
+.im009{
+    
+    text-align: center;
+    font-size: 2em;
+    border:5px solid black;
+    border-radius: 100px;
+    padding:20px;
+    color:white;
+    background-color: blue;
+    width:300px;
+    margin:50px auto;
+
+}
+.im008{
+    text-align: center;
+    font-size: 2em;
+    border:5px solid white;
+    border-radius: 100px;
+    padding:20px;
+    color:white;
+    background-color:green;
+    width:345px;
+    margin:0 auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iu889{
+    font-size:5em;
+}

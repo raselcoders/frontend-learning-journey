@@ -1,0 +1,27 @@
+#phy001{
+    text-align: center;
+    color:blueviolet
+}
+#red0032{
+    text-align: center;
+    color:rgb(218, 52, 179);
+    font-weight: bolder;
+}
+
+#phy001,#red0032{
+    border:20px solid;
+    background-color: rgb(7, 1, 1);
+    Margin:20px;
+    padding:20px;
+    width:300px;
+    border-radius: 5%;
+
+}
+#hmc99{
+    border:3px,solid blue;
+    background-color: white;
+    margin:2px;
+    padding:2px;
+    
+
+}

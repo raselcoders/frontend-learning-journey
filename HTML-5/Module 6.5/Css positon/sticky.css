@@ -1,0 +1,61 @@
+.container {
+}
+
+.box {
+    height: 100px;
+    width: 200px;
+    font-size: 32px;
+    text-align: center;
+    padding: 50px;
+    border:1px solid blueviolet;
+    border-radius: 50px;
+    margin:100px 500px;
+}
+
+.box1 {
+    background: skyblue;
+    left:50px;
+    top:50px;
+
+
+}
+
+.box2 {
+    background: lightgreen;
+    position:relative;
+    left:100px;
+    top:-120px;
+}
+
+.box3 {
+    background: pink;
+    position: relative;
+    left:150px;
+    top:-250px;
+}
+.rrht{
+    font-size:larger;
+}
+
+.logo-fixed{
+    height: 100px;
+    width: 100px;
+    position:fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.logo-fixed img{
+    border-radius: 50px;
+}
+
+.nav{
+    display:flex;
+    justify-content: space-between;
+    width: 500px;
+    margin:0 auto;
+    background-color: aqua;
+    border:10px solid burlywood;
+    border-radius: 20px;
+    position:sticky;
+    top:0
+}

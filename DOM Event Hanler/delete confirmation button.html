@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>delete confirmation button
+</title>
+</head>
+<body>
+    <button id="btn-mouse">Micky Mouse</button>
+    <input id="user-name" placeholder="Enter Write something.." type="text">
+    <script>
+        // document.getElementById('btn-mouse').addEventListener('mouseenter',function(){
+
+        //     console.log("It's Working!");
+        // })
+
+
+        // document.getElementById('btn-mouse').addEventListener('mousemove',function(){
+
+        //     console.log("It's Working!");
+
+
+        // document.getElementById('user-name').addEventListener('focus',function(){
+
+        //     console.log("It's Working!");
+        // })
+
+
+        document.getElementById('user-name').addEventListener('keydown',function(event){
+
+            console.log("It's Working!",event.target);
+        })
+    </script>
+    
+</body> 
+</html>

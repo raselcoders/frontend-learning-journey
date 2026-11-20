@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        *{
+            background-color: rgb(120, 209, 221);
+        }
+        .Container div{
+            text-align: center;
+            border:2px solid blueviolet;
+            height: 80px;
+            width: 200px;
+            font-size:3em;
+        }
+        .Container{
+            display:flex;
+        }
+        .box{
+            font-size:3em;
+            height:80px;
+            width: 200px;
+            border:2px solid blue;
+            text-align: center;
+        }
+        .box-cointener{
+            display:flex;
+            gap:50px;
+        }
+        .tth90{
+            color:green;
+        }
+        .user{
+            font-size:3em;
+            height: 120px;
+            width: 200px;
+            border:2px solid rgb(237, 138, 10);
+            background-color: bisque;
+            text-align: center;
+            color:red;
+        }
+        .user-cointener{
+            display:flex;
+            gap:50px;
+            justify-content: space-around;
+
+        }
+
+        .card-cointener{
+            display:flex;
+            flex-wrap: wrap;
+            gap:50px;
+        } 
+
+    </style>
+</head>
+<div>
+        <h1>Shortcut box cointener make: </h1>
+        <ol class="tth90">
+            <li>
+                .box-container + Enter = 
+                <code>&lt;div class="box-container"&gt;&lt;/div&gt;</code>
+            </li>
+            <li>
+                <p>
+                 .box{$}*6 + Enter =
+                 <code>&lt;div class="box"&gt;1&lt;/div&gt;</code>
+                 </p>
+
+            </li>
+        </ol>
+    </div>
+<body>
+    <div class="Container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+       <br>
+    <div class="box-cointener">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+    </div>
+
+    <br>
+
+    <div class="user-cointener">
+        <div class="user">user-1</div>
+        <div class="user">user-2</div>
+        <div class="user">user-3</div>
+        <div class="user">user-4</div>
+        <div class="user">user-5</div>
+        <div class="user">user-6</div>
+    </div> <br>
+    <div class="card-cointener">
+        <div class="user">user-1</div>
+        <div class="user">user-2</div>
+        <div class="user">user-3</div>
+        <div class="user">user-4</div>
+        <div class="user">user-5</div>
+        <div class="user">user-6</div>
+        <div class="user">user-7</div>
+        <div class="user">user-8</div>
+        <div class="user">user-9</div>
+        <div class="user">user-10</div>
+        <div class="user">user-11</div>
+        <div class="user">user-12</div>
+
+    </div>
+</body>
+</html>

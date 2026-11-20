@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color:black;;
+            width:200px;
+        }
+
+        h1:hover{
+            color: red;
+            background-color: green;
+            width:200px;
+
+        }
+        input{
+            
+            outline: 0;
+            display:flex;
+
+        }
+        input:focus{
+            color:blue;
+            background-color: rgba(95, 158, 160, 0.048);
+            padding:5px;
+            border:1px solid violet;
+        }
+        .anchor a{
+            display:flex;
+            text-decoration: none;
+        }
+
+        .anchor a:visited{
+            color:gray;
+            
+        }
+        li{
+            width:200px;
+        }
+        /* li:first-child{
+            color:red;
+        } */
+
+        /* li:last-child{
+            color:orange;
+        } */
+
+        li:nth-child(2n){
+            color:brown;
+            background-color: blueviolet;
+        }
+        li:nth-child(2n+1){
+            color:blue;
+            background-color: #757575;
+            
+
+
+    </style>
+</head>
+<body>
+    <h1>Pseudo Class</h1>
+    <input type="text">
+    <input type="text">
+    <input type="text">
+    <br>
+    <div class="anchor">
+        <a href="https://monkeytype.com/">Monkeytype</a>
+        <a href="https://www.facebook.com/">Facebook</a>
+    </div>
+
+    <ol>
+        <li>Primary School</li>
+        <li>Heigh School</li>
+        <li>College</li>
+        <li>University</li>
+        <li>International University</li>
+
+    </ol>
+</body>
+</html>
